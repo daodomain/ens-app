@@ -11,7 +11,7 @@ import {
   isDecrypted,
   labelhash,
   utils
-} from '@ensdomains/ui'
+} from '@daodomains/ui'
 import { formatsByName } from '@ensdomains/address-encoder'
 import isEqual from 'lodash/isEqual'
 import modeNames from '../modes'
@@ -484,32 +484,32 @@ const resolvers = {
         1: {
           DEPRECATED: [],
           OLD: [
-            '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
-            '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
-            '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3',
-            '0x226159d592e2b063810a10ebf6dcbada94ed68b8'
+            // '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
+            // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
+            // '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3',
+            // '0x226159d592e2b063810a10ebf6dcbada94ed68b8'
           ]
         },
         3: {
           OLD: [
-            '0x12299799a50340FB860D276805E78550cBaD3De3', // Ropsten
-            '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
+            // '0x12299799a50340FB860D276805E78550cBaD3De3', // Ropsten
+            // '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
           ],
           DEPRECATED: []
         },
         4: {
-          OLD: ['0x06E6B4E68b0B9B2617b35Eec811535050999282F'],
+          OLD: [], // ['0x06E6B4E68b0B9B2617b35Eec811535050999282F']
           DEPRECATED: []
         },
         5: {
-          OLD: ['0xfF77b96d6bafCec0D684bB528b22e0Ab09C70663'],
+          OLD: [], // ['0xfF77b96d6bafCec0D684bB528b22e0Ab09C70663']
           DEPRECATED: []
         }
       }
 
       let DEPRECATED_RESOLVERS = []
       let OLD_RESOLVERS = [
-        '0xDaaF96c344f63131acadD0Ea35170E7892d3dfBA' // all networks
+        '0x3b9151C81E1Faa8d942B9eC45317B60b55352c4b' // all networks
       ]
 
       if (RESOLVERS[networkId]) {

@@ -1,4 +1,4 @@
-import { setupENS } from '@ensdomains/ui'
+import { setupENS } from '@daodomains/ui'
 import { isENSReadyReactive } from '../reactiveVars'
 
 let ens = {},
@@ -24,6 +24,9 @@ export async function setup({
     registrar: registrarInstance,
     providerObject
   } = await setupENS(option)
+  console.log('this ens : ', ens)
+  console.log('this registrar : ', registrar)
+  console.log('this providerObject : ', providerObject)
   ens = ensInstance
   registrar = registrarInstance
   ensRegistryAddress = ensAddress

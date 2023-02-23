@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga'
 import ReactGA4 from 'react-ga4'
-import { getNetworkId } from '@ensdomains/ui'
+import { getNetworkId } from '@daodomains/ui'
 
 const TrackingID = {
   live: 'UA-138903307-1',

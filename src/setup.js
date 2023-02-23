@@ -3,7 +3,7 @@ import {
   getNetwork,
   getNetworkId,
   isReadOnly
-} from '@ensdomains/ui'
+} from '@daodomains/ui'
 import { connect } from './api/web3modal'
 import { setup } from './apollo/mutations/ens'
 import {
@@ -91,13 +91,13 @@ export const getProvider = async reconnect => {
       )
       return provider
     }
-
+    console.log('this getProvider 1 is :', provider)
     const safe = await safeInfo()
     if (safe) {
       const provider = await setupSafeApp(safe)
       return provider
     }
-
+    console.log('this getProvider 2 is :', provider)
     if (
       window.localStorage.getItem('WEB3_CONNECT_CACHED_PROVIDER') ||
       reconnect
@@ -105,7 +105,7 @@ export const getProvider = async reconnect => {
       provider = await connect()
       return provider
     }
-
+    console.log('this getProvider 3 is :', provider)
     const { providerObject } = await setup({
       customProvider: rpcUrl,
       reloadOnAccountsChange: false,
@@ -120,7 +120,7 @@ export const getProvider = async reconnect => {
       return
     }
   }
-
+  console.log('this getProvider 4 is :', provider)
   try {
     const { providerObject } = await setup({
       customProvider: rpcUrl,
@@ -137,7 +137,7 @@ export const getProvider = async reconnect => {
 
 export const setWeb3Provider = async provider => {
   web3ProviderReactive(provider)
-
+  console.log('this setWEB3pRrovider is :', provider)
   const accounts = await getAccounts()
 
   if (provider) {
@@ -179,7 +179,7 @@ export default async reconnect => {
     if (!provider) throw 'Please install a wallet'
 
     const networkId = await getNetworkId()
-
+    console.log('this networkId is :', networkId)
     if (!isSupportedNetwork(networkId)) {
       handleUnsupportedNetwork(provider)
       return
