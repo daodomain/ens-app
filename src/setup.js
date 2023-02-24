@@ -120,7 +120,7 @@ export const getProvider = async reconnect => {
       return
     }
   }
-  console.log('this getProvider 4 is :', provider)
+  console.log('this getProvider 4')
   try {
     const { providerObject } = await setup({
       customProvider: rpcUrl,
