@@ -509,7 +509,7 @@ const resolvers = {
 
       let DEPRECATED_RESOLVERS = []
       let OLD_RESOLVERS = [
-        '0x3b9151C81E1Faa8d942B9eC45317B60b55352c4b' // all networks
+        //'0xDaaF96c344f63131acadD0Ea35170E7892d3dfBA' // all networks
       ]
 
       if (RESOLVERS[networkId]) {
@@ -808,9 +808,9 @@ const resolvers = {
 
       function calculateIsOldContentResolver(resolver) {
         const oldContentResolvers = [
-          '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
-          '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
-          '0xbf80bc10d6ebfee11bea9a157d762110a0b73d95'
+          // '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
+          // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
+          // '0xbf80bc10d6ebfee11bea9a157d762110a0b73d95'
         ]
         const localResolvers = process.env.REACT_APP_OLD_CONTENT_RESOLVERS
           ? process.env.REACT_APP_OLD_CONTENT_RESOLVERS.split(',')

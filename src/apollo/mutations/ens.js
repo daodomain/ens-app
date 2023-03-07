@@ -17,7 +17,7 @@ export async function setup({
     enforceReadOnly,
     enforceReload,
     customProvider,
-    ensAddress
+    ensAddress: '0x8E5b3A32Cf8eb64590380364bA56b88BA643eb55'
   }
   const {
     ens: ensInstance,

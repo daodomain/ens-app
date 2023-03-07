@@ -42,6 +42,7 @@ export const isSupportedNetwork = networkId => {
     case 3:
     case 4:
     case 5:
+    case 11155111:
     case 1337:
     case 31337:
       return true
@@ -113,6 +114,7 @@ export const getProvider = async reconnect => {
       enforceReload: false
     })
     provider = providerObject
+    console.log('this getProvider 5 is :', provider)
     return provider
   } catch (e) {
     if (e.error && e.error.message.match(/Unsupported network/)) {
@@ -128,6 +130,7 @@ export const getProvider = async reconnect => {
       enforceReadOnly: true,
       enforceReload: false
     })
+    console.log('this getProvider 6')
     provider = providerObject
     return provider
   } catch (e) {

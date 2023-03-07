@@ -98,7 +98,7 @@
     "cypress:ci": "start-server-and-test start:test http://localhost:3000 cypress:record",
     "cypress:ci:ipfs": "/bin/sh -c 'if [ \"$TRAVIS_PULL_REQUEST\" = \"true\" ]; then yarn cypress:run:ipfs; else yarn cypress:run:ipfs; fi'",
     "cypress:e2e": "./test.js",
-    "deploy:dev": "npm run build && npm run postbuild && surge build ensappdev.surge.sh",
+    "deploy:dev": "npm run build && npm run postbuild && surge build daoappdev.surge.sh",
     "deploy": "npm run build && npm run postbuild && surge build app.ens.domains",
     "i18n": "sync-i18n --files 'public/locales/*.json' --primary en --languages cn --space 2",
     "check-i18n": "npm run i18n -- --check",
