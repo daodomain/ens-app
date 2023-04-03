@@ -17,19 +17,19 @@ export async function setup({
     enforceReadOnly,
     enforceReload,
     customProvider,
-    ensAddress: '0x8E5b3A32Cf8eb64590380364bA56b88BA643eb55'
+    ensAddress: '0x07EF7d99Da8ebc810F0A3713208F56550bCc7634'
   }
   const {
     ens: ensInstance,
     registrar: registrarInstance,
     providerObject
   } = await setupENS(option)
-  console.log('this ens : ', ens)
-  console.log('this registrar : ', registrar)
-  console.log('this providerObject : ', providerObject)
   ens = ensInstance
   registrar = registrarInstance
   ensRegistryAddress = ensAddress
+  console.log('this ens : ', ens)
+  console.log('this registrar : ', registrar)
+  console.log('this providerObject : ', providerObject)
   isENSReadyReactive(true)
   return { ens, registrar, providerObject }
 }

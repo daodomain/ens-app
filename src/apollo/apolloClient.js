@@ -26,7 +26,7 @@ const endpoints = {
   '3': 'https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten33', // old: https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten
   '4': 'https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby44', // old: https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby
   '5': 'https://api.thegraph.com/subgraphs/name/imanman/daodid-subgraph', // old: https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli
-  '11155111': 'https://api.thegraph.com/subgraphs/name/imanman/daodid-subgraph'
+  '11155111': 'http://sfrp.fxait.com:8000/subgraphs/name/dao/dao'
 }
 
 function getGraphQLAPI() {

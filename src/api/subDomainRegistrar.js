@@ -4,7 +4,7 @@ import domains from '../constants/domains.json'
 
 let subDomainRegistrars = {}
 
-const defaultAddress = '0xA98EE5D25eF3Fd9179a038C34ad14802aB216F2C' // old: 0x0b07463b30b302a98407d3e3df85ebc073b0dbd1
+const defaultAddress = '0x7A354204C5A17cc1c3432372DC6F22Ab9dC7Fade' // old: 0x0b07463b30b302a98407d3e3df85ebc073b0dbd1
 
 const getSubDomainRegistrar = async address => {
   const provider = await getProvider()

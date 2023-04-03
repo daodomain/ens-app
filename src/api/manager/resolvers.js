@@ -170,7 +170,8 @@ export const handleMultipleTransactions = async (
 async function getRegistrarEntry(name) {
   const registrar = getRegistrar()
   const nameArray = name.split('.')
-  if (nameArray.length > 3 || nameArray[1] !== 'eth') {
+  // if (nameArray.length > 3 || nameArray[1] !== 'eth') {
+  if (nameArray.length > 3 || nameArray[1] !== 'dao') {
     return {}
   }
 
@@ -268,7 +269,8 @@ async function getDNSEntryDetails(name) {
   const registrar = getRegistrar()
   const nameArray = name.split('.')
   const networkId = await getNetworkId()
-  if (nameArray.length !== 2 || nameArray[1] === 'eth') return {}
+  // if (nameArray.length !== 2 || nameArray[1] === 'eth') return {}
+  if (nameArray.length !== 2 || nameArray[1] === 'dao') return {}
 
   let tld = nameArray[1]
   let owner
@@ -309,7 +311,8 @@ function adjustForShortNames(node) {
   const { label, parent } = node
 
   // return original node if is subdomain or not eth
-  if (nameArray.length > 2 || parent !== 'eth' || label.length > 6) return node
+  // if (nameArray.length > 2 || parent !== 'eth' || label.length > 6) return node
+  if (nameArray.length > 2 || parent !== 'dao' || label.length > 6) return node
 
   //if the auctions are over
   if (new Date() > new Date(1570924800000)) {
@@ -344,7 +347,8 @@ const resolvers = {
     publicResolver: async () => {
       try {
         const ens = getENS()
-        const resolver = await ens.getAddress('resolver.eth')
+        // const resolver = await ens.getAddress('resolver.eth')
+        const resolver = await ens.getAddress('resolver.dao')
         return {
           address: resolver,
           __typename: 'Resolver'
@@ -509,6 +513,7 @@ const resolvers = {
 
       let DEPRECATED_RESOLVERS = []
       let OLD_RESOLVERS = [
+        // '0x3b9151C81E1Faa8d942B9eC45317B60b55352c4b' // all networks
         //'0xDaaF96c344f63131acadD0Ea35170E7892d3dfBA' // all networks
       ]
 
@@ -544,7 +549,8 @@ const resolvers = {
       }
 
       async function calculateIsPublicResolverReady() {
-        const publicResolver = await ens.getAddress('resolver.eth')
+        // const publicResolver = await ens.getAddress('resolver.eth')
+        const publicResolver = await ens.getAddress('resolver.dao')
         return !OLD_RESOLVERS.map(a => a.toLowerCase()).includes(publicResolver)
       }
 
@@ -912,7 +918,8 @@ const resolvers = {
 
       // get public resolver
       try {
-        const publicResolver = await ens.getAddress('resolver.eth')
+        // const publicResolver = await ens.getAddress('resolver.eth')
+        const publicResolver = await ens.getAddress('resolver.dao')
         const resolver = await ens.getResolver(name)
         const isOldContentResolver = calculateIsOldContentResolver(resolver)
 

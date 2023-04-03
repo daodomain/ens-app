@@ -31,7 +31,8 @@ const useCheckValidity = (_searchTerm, isENSReady) => {
       setErrors([])
 
       if (_searchTerm.split('.').length === 1) {
-        searchTerm = _searchTerm + '.eth'
+        // searchTerm = _searchTerm + '.eth'
+        searchTerm = _searchTerm + '.dao'
       } else {
         searchTerm = _searchTerm
       }
