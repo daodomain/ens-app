@@ -58,7 +58,8 @@ kintsugi: { chainId: 1337702, name: "kintsugi" },
 
 add the code :
 
-```js sepolia: {
+```js
+    sepolia: {
         chainId: 11155111,
         ensAddress: "xxxxxx",
         name: "sepolia",
@@ -79,7 +80,8 @@ kintsugi: { chainId: 1337702, name: "kintsugi" },
 
 add the code :
 
-```js sepolia: {
+```js
+    sepolia: {
         chainId: 11155111,
         ensAddress: "xxxxxx",
         name: "sepolia",
@@ -100,7 +102,8 @@ kintsugi: { chainId: 1337702, name: "kintsugi" },
 
 add the code :
 
-```js sepolia: {
+```js
+    sepolia: {
         chainId: 11155111,
         ensAddress: "xxxxxx",
         name: "sepolia",

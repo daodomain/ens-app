@@ -1311,10 +1311,36 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@daodomains/ui@^3.3.23", "@daodomains/ui@^3.4.4":
+"@daodomains/ui@^3.3.23":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@daodomains/ui/-/ui-3.4.6.tgz#4825d39686ece00539f46cf73462d111455b077d"
   integrity sha512-XefqJp4qJPfuOZBf5AXmfr5oDTvl9e4vxASEy6V3p0irkrvR3xqCj9TwUDwpKFnf7WEPjn4TGbap0NjCNYPPBw==
+  dependencies:
+    "@0xproject/utils" "^2.0.2"
+    "@babel/plugin-proposal-class-properties" "^7.8.3"
+    "@babel/runtime" "^7.4.4"
+    "@ensdomains/address-encoder" "^0.2.20"
+    "@ensdomains/content-hash" "^2.5.7"
+    "@ensdomains/contracts" "^0.0.1"
+    "@ensdomains/dnsprovejs" "^0.4.1"
+    "@ensdomains/dnssecoraclejs" "^0.2.7"
+    "@ensdomains/dnssecoraclejs-017" "npm:@ensdomains/dnssecoraclejs@0.1.7"
+    "@ensdomains/ens-contracts" "^0.0.11"
+    "@ensdomains/eth-ens-namehash" "^2.0.15"
+    "@ensdomains/mock" "npm:ensdomains-mock@^2.1.50"
+    "@ethvault/iframe-provider" "0.1.9"
+    base58check "^2.0.0"
+    bech32 "^1.1.3"
+    bs58 "^4.0.1"
+    cross-fetch "^3.0.2"
+    dns-packet "^5.2.1"
+    ethers "^5.6.2"
+    js-sha3 "^0.8.0"
+
+"@daodomains/ui@^3.4.4":
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/@daodomains/ui/-/ui-3.4.9.tgz#439286f8d55b92ab2a14d7f2ed41395d5ada0152"
+  integrity sha512-cotES9h+4vM5VV0SNmVOf60qFywbOrm6lz/gVEJVQnm//rZlZ0wWesNOXtjGiK2AcPl4usJHFrufMV6HZNeQDg==
   dependencies:
     "@0xproject/utils" "^2.0.2"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
