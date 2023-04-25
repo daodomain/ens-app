@@ -67,7 +67,7 @@ add the code :
     },
 ```
 
-and replace xxxxxx to the contract address of ENSRegistry
+and replace xxxxxx to the contract address of ENSRegistry, default ENSRegistry: 0x07EF7d99Da8ebc810F0A3713208F56550bCc7634
 
 ## 7.3
 
@@ -89,7 +89,7 @@ add the code :
     },
 ```
 
-and replace xxxxxx to the contract address of ENSRegistry
+and replace xxxxxx to the contract address of ENSRegistry, default ENSRegistry: 0x07EF7d99Da8ebc810F0A3713208F56550bCc7634
 
 ## 7.4
 
@@ -111,7 +111,7 @@ add the code :
     },
 ```
 
-and replace xxxxxx to the contract address of ENSRegistry
+and replace xxxxxx to the contract address of ENSRegistry, default ENSRegistry: 0x07EF7d99Da8ebc810F0A3713208F56550bCc7634
 
 # 8 run build or start
 
